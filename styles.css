@@ -83,6 +83,13 @@ section {
     opacity: 0.5;
 }
 
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour que l'image couvre tout le conteneur sans déformation */
+    border-radius: 10px; /* Pour correspondre au style du conteneur */
+}
+
 .project.active {
     transform: scale(1.2); /* Agrandir davantage l'élément sélectionné */
     opacity: 1;
@@ -134,7 +141,9 @@ footer {
     margin-top: 20px; /* Ajouter de l'espace en dessous de l'image */
 }
 
+/* Supprimez ces styles */
 .close {
+    display: none;
     cursor: pointer;
     color: #aaa;
     float: right;
@@ -144,11 +153,10 @@ footer {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
 
 /* Styles du pop-up des projets */
 .popup-project {
@@ -176,6 +184,13 @@ footer {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 80%;
-    max-width: 500px;
+    width: 90%; /* Augmenter la largeur */
+    max-width: 800px; /* Augmenter la largeur maximale */
+}
+
+.popup-project-image {
+    width: 100%; /* Assurer que l'image prend toute la largeur du conteneur */
+    height: auto; /* Ajuster la hauteur automatiquement */
+    border-radius: 10px; /* Pour donner un effet arrondi */
+    margin-top: 20px; /* Ajouter de l'espace en dessous de l'image */
 }

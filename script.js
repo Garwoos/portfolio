@@ -41,8 +41,6 @@ document.querySelectorAll('.project').forEach((project, index) => {
         }
 
         updateCarousel();
-
-        
     });
 });
 
@@ -52,16 +50,19 @@ updateCarousel();
 // Données des projets
 const projectsData = [
     {
-        title: "Projet 1",
-        description: "Description détaillée du Projet 1.",
+        title: "Heavent",
+        description: "Heavent est une application de gestion d’événements conçue pour simplifier l’organisation pour les professionnels et les particuliers. Elle permet de créer, rechercher et réserver des événements, tout en assurant une gestion sécurisée des données utilisateurs grâce à une authentification et un hachage des mots de passe. L’interface utilisateur, développée avec JavaFX et SceneBuilder, propose une navigation fluide avec un menu personnalisé, une barre de recherche et des notifications pour suivre les modifications. Heavent utilise une base de données MySQL pour stocker les informations, tandis que la logique de l’application repose sur Java et le framework Spring Boot.",
+        image: "Heavent.png"
     },
     {
         title: "Projet 2",
         description: "Description détaillée du Projet 2.",
+        image: "projet2_image.png"
     },
     {
         title: "Projet 3",
         description: "Description détaillée du Projet 3.",
+        image: "projet3_image.png"
     },
 ];
 
@@ -70,10 +71,12 @@ function showProjectPopup(index) {
     const popupProject = document.querySelector('.popup-project');
     const projectTitle = document.getElementById('project-title');
     const projectDescription = document.getElementById('project-description');
+    const projectImage = document.getElementById('project-image');
 
-    // Met à jour le titre et la description du projet
+    // Met à jour le titre, la description et l'image du projet
     projectTitle.textContent = projectsData[index].title;
     projectDescription.textContent = projectsData[index].description;
+    projectImage.src = projectsData[index].image;
 
     // Afficher le pop-up avec effet de fondu
     popupProject.classList.add('show');
