@@ -26,6 +26,10 @@ document.querySelectorAll('.project').forEach((project, index) => {
     project.addEventListener('click', () => {
         const totalProjects = document.querySelectorAll('.project').length;
 
+        // Vérifie si l'index courant correspond à l'index du projet cliqué avant d'ouvrir le pop-up
+        if (currentIndex == index) {
+            showProjectPopup(currentIndex);
+        }
         // Mettre à jour l'index courant
         currentIndex = index;
 
@@ -38,10 +42,7 @@ document.querySelectorAll('.project').forEach((project, index) => {
 
         updateCarousel();
 
-        // Vérifie si l'index courant correspond à l'index du projet cliqué avant d'ouvrir le pop-up
-        if (currentIndex === index) {
-            showProjectPopup(currentIndex);
-        }
+        
     });
 });
 
