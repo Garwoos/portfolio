@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Étudiant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <img src="sam_photo.png" alt="Mon visage" id="profile-pic" />
+      <h1>Mon Portfolio</h1>
+    </header>
+  
+    <section id="projects-title">
+      <h2>Mes Projets</h2>
+    </section>
+  
+    <section id="projects">
+      <div class="carousel">
+        <div class="project">Heavent</div>
+        <div class="project">Projet 2</div>
+        <div class="project">Projet 3</div>
+      </div>
+    </section>
+  
+    <footer>
+      <p>© 2025 Mon Portfolio - Sam Maisonneuve</p>
+    </footer>
+
+    
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>À propos de moi</h2>
+        <p>Je suis un étudiant passionné par le développement web, avec une spécialisation en création d'interfaces modernes et dynamiques.</p>
+        <img src="sam_photo.png" alt="Mon visage" class="popup-image" />
+        
+      </div>
+    </div>
+
+    <div class="popup-project">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 id="project-title">Titre du Projet</h2>
+            <p id="project-description">Description du projet ici.</p>
+        </div>
+    </div>
+    
+  
+    <script src="script.js"></script>
+</body>
+</html>
