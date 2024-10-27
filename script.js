@@ -52,7 +52,7 @@ const projectsData = [
     {
         title: "Heavent",
         description: "Heavent est une application de gestion d’événements conçue pour simplifier l’organisation pour les professionnels et les particuliers. Elle permet de créer, rechercher et réserver des événements, tout en assurant une gestion sécurisée des données utilisateurs grâce à une authentification et un hachage des mots de passe. L’interface utilisateur, développée avec JavaFX et SceneBuilder, propose une navigation fluide avec un menu personnalisé, une barre de recherche et des notifications pour suivre les modifications. Heavent utilise une base de données MySQL pour stocker les informations, tandis que la logique de l’application repose sur Java et le framework Spring Boot.",
-        image: "images/Heavent.png"
+        image: "images/heavent.png"
     },
     {
         title: "Projet 2",
