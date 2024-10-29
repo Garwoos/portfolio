@@ -183,9 +183,41 @@ footer {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left; /* Aligner le texte à gauche */
     width: 90%; /* Augmenter la largeur */
-    max-width: 800px; /* Augmenter la largeur maximale */
+    max-width: 1000px; /* Augmenter la largeur maximale */
+    max-height: 90vh; /* Ajouter une hauteur maximale */
+    overflow-y: auto; /* Ajouter un défilement vertical si nécessaire */
+}
+
+.popup-project .popup-body {
+    display: flex; /* Utiliser Flexbox */
+    flex-direction: row; /* Aligner les éléments en ligne */
+    justify-content: space-between; /* Espacer les éléments */
+    align-items: center; /* Aligner verticalement les éléments */
+}
+
+.popup-project .popup-content .popup-project-image {
+    width: 60%; /* Augmenter la largeur de l'image */
+    height: auto; /* Ajuster la hauteur automatiquement */
+    border-radius: 10px; /* Pour donner un effet arrondi */
+    margin-right: 20px; /* Ajouter de l'espace à droite de l'image */
+}
+
+.popup-project .popup-content .popup-project-text {
+    width: 40%; /* Réduire la largeur du texte */
+}
+
+.popup-project h2 {
+    margin-bottom: 20px; /* Ajouter de l'espace en dessous du titre */
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Assurer que le titre prend toute la largeur disponible */
+}
+
+.popup-project.gridprojects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .popup-project-image {
